@@ -13,21 +13,16 @@
                     <i class='bx bx-user-circle login__icon'></i>
                     <input type="text" id="currentUsername" name="currentUsername" [(ngModel)]="currentUsername" placeholder="Username" class="login__input" required> 
                 </div>
-                <!-- <div class="text-right" *ngIf="currentUsername==null"><small> *Required</small></div>  -->
-                <!-- <div *ngIf="currentUsername.invalid && (currentUsername.dirty || currentUsername.touched)" class="alert">           
-                        <div *ngIf="currentUsername.errors?.required">
-                            Name is required.
-                        </div>
-                </div> -->
+                
                 <div class="login__box">
                     <i class='bx bx-lock-alt login__icon'></i>
                     <input type="password" id="currentPassword" name="currentPassword" [(ngModel)]="currentPassword" placeholder="Password" class="login__input" required>
                 </div>
-                <!-- <small *ngIf="error">{{error}}</small> -->
+              
                 <div *ngIf="error" class="alert alert-danger mt-2" role="alert">
                     {{error}}
                 </div>
-                <button type="submit" (click)="signin()" class="login__button">Sign in</button>
+                <button type="submit" (click)="signin()" class="login__button">Sign In</button>
 
                 <div>
                     <span class="login__account">Don't have an Account ?</span>
