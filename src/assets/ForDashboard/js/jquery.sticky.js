@@ -1,14 +1,3 @@
-// Sticky Plugin v1.0.4 for jQuery
-// =============
-// Author: Anthony Garand
-// Improvements by German M. Bravo (Kronuz) and Ruud Kamphuis (ruudk)
-// Improvements by Leonardo C. Daronco (daronco)
-// Created: 02/14/2011
-// Date: 07/20/2015
-// Website: http://stickyjs.com/
-// Description: Makes an element on the page stick on the screen as you scroll
-//              It will only set the 'top' and 'position' of your element, you
-//              might need to adjust the width in some cases.
 
 (function (factory) {
     if (typeof define === 'function' && define.amd) {
@@ -32,7 +21,7 @@
       wrapperClassName: 'sticky-wrapper',
       center: false,
       getWidthFrom: '',
-      widthFromWrapper: true, // works only when .getWidthFrom is empty
+      widthFromWrapper: true, 
       responsiveWidth: false,
       zIndex: 'auto'
     },
@@ -51,7 +40,7 @@
           elementTop = s.stickyWrapper.offset().top,
           etse = elementTop - s.topSpacing - extra;
 
-        //update height in case of dynamic content
+      
         s.stickyWrapper.css('height', s.stickyElement.outerHeight());
 
         if (scrollTop <= etse) {
@@ -97,22 +86,22 @@
             if (s.currentTop === null) {
               s.stickyElement.trigger('sticky-start', [s]);
             } else {
-              // sticky is started but it have to be repositioned
+              
               s.stickyElement.trigger('sticky-update', [s]);
             }
 
             if (s.currentTop === s.topSpacing && s.currentTop > newTop || s.currentTop === null && newTop < s.topSpacing) {
-              // just reached bottom || just started to stick but bottom is already reached
+              
               s.stickyElement.trigger('sticky-bottom-reached', [s]);
             } else if(s.currentTop !== null && newTop === s.topSpacing && s.currentTop < newTop) {
-              // sticky is started && sticked at topSpacing && overflowing from top just finished
+             
               s.stickyElement.trigger('sticky-bottom-unreached', [s]);
             }
 
             s.currentTop = newTop;
           }
 
-          // Check if sticky has reached end of container and stop sticking
+          
           var stickyWrapperContainer = s.stickyWrapper.parent();
           var unstick = (s.stickyElement.offset().top + s.stickyElement.outerHeight() >= stickyWrapperContainer.offset().top + stickyWrapperContainer.outerHeight()) && (s.stickyElement.offset().top <= s.topSpacing);
 
@@ -253,7 +242,7 @@
       }
     };
 
-  // should be more efficient than using $window.scroll(scroller) and $window.resize(resizer):
+  
   if (window.addEventListener) {
     window.addEventListener('scroll', scroller, false);
     window.addEventListener('resize', resizer, false);
