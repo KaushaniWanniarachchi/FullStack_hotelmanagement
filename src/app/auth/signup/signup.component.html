@@ -27,8 +27,7 @@
                     <i class='bx bx-phone-call login__icon'></i>
                     <input type="tel" id="mobileNumber" name="mobileNumber" formControlName="mobileNumber" placeholder="Phone Number" pattern="[0-9]{10}" class="login__input" required>
                 </div>
-                <!-- <div class="text-right" *ngIf="mobileNumber.errors.pattern"><small> Password Not Matched</small></div>  -->
-
+                
                 <div class="login__box">
                     <i class='bx bx-at login__icon'></i>
                     <input type="email" id="email" name="email" formControlName="email" placeholder="Email" class="login__input" required>
@@ -44,7 +43,7 @@
                     <i class='bx bx-lock-alt login__icon'></i>
                     <input type="password" id="cPassword" name="cPassword" formControlName="cPassword" placeholder="Confirm Password" class="login__input mb-1" required>
                 </div>
-                <div class="text-right" *ngIf="cPassword!==null && cPassword.invalid && cPassword.errors.passwordMatch"><small> Password Not Matched</small></div> 
+                <div class="text-right" *ngIf="cPassword!==null && cPassword.invalid && cPassword.errors.passwordMatch"><small> Password not matched</small></div> 
 
                 <button type="button" (click)="signup()" class="login__button">Sign Up</button>
 
