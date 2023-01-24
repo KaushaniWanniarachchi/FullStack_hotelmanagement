@@ -30,7 +30,7 @@
                             <td>{{query.query}}</td>
                             <td>{{query.insertedAt  | date: 'dd MMM yyyy hh:mm a' }}</td>
                             <td>
-                              <!-- For Reply (Button trigger modal) -->
+                              
                               <button type="button" (click)="setValue(query)" class="btn btn-primary" data-toggle="modal" [attr.data-target]="'#reply'+ query._id">
                                 <i class="fas fa-reply"></i>
                               </button>
@@ -52,7 +52,7 @@
 </div>
 
 <span *ngFor="let query of queries">
-  <!-- Send Reply Modal -->
+  
   <div class="modal fade" id="reply{{query._id}}" tabindex="-1" role="dialog" aria-labelledby="replyLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -76,7 +76,7 @@
   </div>
 </span>
 
-<!-- Reply View Modal -->
+
 <div class="modal fade bd-example-modal-lg" id="showAllreply" tabindex="-1" role="dialog" aria-labelledby="showAllreplyLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
