@@ -1,0 +1,171 @@
+<div class="row" style="width: 100.81%">
+  <div style="width: 15%"></div>
+  <main class="col-lg-9" style="min-height: 100vh">
+    <div class="form-body">
+      <div class="row">
+        <div class="form-holder">
+          <div class="form-content mx-5">
+            <div class="form-items">
+              <h3 style="margin-left: 22%">Add Reserve Details</h3>
+              <br />
+              <form
+                class="requires-validation"
+                #reserveForm="ngForm"
+                (ngSubmit)="addReserve(reserveForm.value)"
+              >
+                <div class="col-md-12">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label
+                        >Room Cateory
+                        <select
+                          class="form-select mt-2"
+                          style="width: 170%"
+                          name="roomCategory"
+                          ngModel
+                          required
+                        >
+                          <option selected disabled value="">Category</option>
+                          <option value="{{ roomCategory[0].roomCategory }}">
+                            {{ roomCategory[0].roomCategory }}
+                          </option>
+                          <option value="{{ roomCategory[1].roomCategory }}">
+                            {{ roomCategory[1].roomCategory }}
+                          </option>
+                          <option value="{{ roomCategory[2].roomCategory }}">
+                            {{ roomCategory[2].roomCategory }}
+                          </option>
+                          <option value="{{ roomCategory[3].roomCategory }}">
+                            {{ roomCategory[3].roomCategory }}
+                          </option>
+                          <option value="{{ roomCategory[4].roomCategory }}">
+                            {{ roomCategory[4].roomCategory }}
+                          </option>
+                          <option value="{{ roomCategory[5].roomCategory }}">
+                            {{ roomCategory[5].roomCategory }}
+                          </option>
+                        </select>
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                      <label
+                        >Gender
+                        <select
+                          class="form-select mt-2"
+                          style="width: 222%"
+                          name="gender"
+                          ngModel
+                          required
+                        >
+                          <option selected disabled value="">Gender</option>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                          <option value="other">Other</option>
+                        </select>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <span>
+                  <div class="col-md-12">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="firstName"
+                      ngModel
+                      placeholder="First Name"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-12">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="lastName"
+                      ngModel
+                      placeholder="Last Name"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-12">
+                    <input
+                      class="form-control"
+                      type="number"
+                      name="mobileNo"
+                      ngModel
+                      placeholder="Mobile Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <input
+                      class="form-control"
+                      type="email"
+                      name="email"
+                      ngModel
+                      placeholder="E-mail Address"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <input
+                      class="form-control"
+                      type="number"
+                      name="nights"
+                      ngModel
+                      placeholder="How many nights?"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-12 mt-3">
+                    <label class="mb-3 mr-1" for="gender">Check-In: </label>
+                    <input
+                      class="form-control"
+                      type="datetime-local"
+                      name="checkIn"
+                      ngModel
+                      placeholder="Check-In"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-12 mt-3">
+                    <label class="mb-3 mr-1" for="gender">Check-Out: </label>
+                    <input
+                      class="form-control"
+                      type="datetime-local"
+                      name="checkOut"
+                      ngModel
+                      placeholder="Check-In"
+                      required
+                    />
+                  </div>
+                  <br />
+                  <div class="form-check mx-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="invalidCheck"
+                      required
+                      checked
+                    />
+                    <label class="form-check-label"
+                      >I confirm that all data are correct</label
+                    >
+                  </div>
+
+                  <div class="form-button mt-3 mx-3">
+                    <button class="btn btn-primary">Reserve</button>
+                  </div>
+                </span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

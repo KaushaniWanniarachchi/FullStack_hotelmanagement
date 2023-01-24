@@ -1,0 +1,322 @@
+<!-- girls rooms -->
+<div class="container mt-2 mb-5">
+  <div class="row justify-content-between mx-5">
+    <div class="col-xs-3 col-sm-3 col-md-3">
+      <div class="card" style="width: 18rem">
+        <img
+          src="/../assets/img/singleRoom.webp"
+          class="card-img-top"
+          alt="image of Room"
+          width="249px"
+          height="270px"
+        />
+        <div class="card-body">
+          <h1 class="card-title mb-0">{{ roomCategory[0].roomCategory }}</h1>
+          <em class="small">(Single)</em>
+          <hr style="margin: revert" />
+          <h2 class="mb-0">
+            <span style="color: #a14c4c">LKR {{ roomCategory[0].price }}</span
+            ><em class="text-muted ml-2" style="font-size: 13px"
+              >~including food</em
+            >
+          </h2>
+          <h2 class="card-text">
+            <span
+              class="badge badge-pill badge-primary"
+              style="color: black; font-weight: 500"
+              >Available Room: {{ roomCategory[0].availableCount }}</span
+            >
+            <!-- <ng-template #elseBlock>
+                            <span class="badge badge-pill badge-danger"
+                                style="color: black; font-weight: 500">Unavailable</span>
+                        </ng-template> -->
+          </h2>
+          <button
+            *ngIf="user && roomCategory[0].availableCount > 0; else elseBlock"
+            type="button"
+            routerLink="/reserve"
+            routerLinkActive="active"
+            class="btn btn-success font-weight: 500"
+          >
+            Reserve
+          </button>
+          <ng-template #elseBlock>
+            <button
+              disabled
+              type="button"
+              routerLinkActive="active"
+              class="btn btn-success font-weight: 500"
+            >
+              Reserve
+            </button>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3">
+      <div class="card" style="width: 18rem">
+        <img
+          src="/../assets/img/Room-Type-Double-Room.webp"
+          class="card-img-top"
+          alt="image of Room"
+          width="249px"
+          height="270px"
+        />
+        <div class="card-body">
+          <h1 class="card-title mb-0">{{ roomCategory[1].roomCategory }}</h1>
+          <em class="small">(Double)</em>
+          <hr style="margin: revert" />
+          <h2 class="mb-0">
+            <span style="color: #a14c4c">LKR {{ roomCategory[1].price }}</span
+            ><em class="text-muted ml-2" style="font-size: 13px"
+              >~including food</em
+            >
+          </h2>
+          <h2 class="card-text">
+            <span
+              class="badge badge-pill badge-primary"
+              style="color: black; font-weight: 500"
+              >Available Room: {{ roomCategory[1].availableCount }}</span
+            >
+            <!-- <ng-template #elseBlock>
+                            <span class="badge badge-pill badge-danger"
+                                style="color: black; font-weight: 500">Unavailable</span>
+                        </ng-template> -->
+          </h2>
+          <button
+            *ngIf="user && roomCategory[1].availableCount > 0; else elseBlock"
+            type="button"
+            routerLink="/reserve"
+            routerLinkActive="active"
+            class="btn btn-success font-weight: 500"
+          >
+            Reserve
+          </button>
+          <ng-template #elseBlock>
+            <button
+              disabled
+              type="button"
+              routerLinkActive="active"
+              class="btn btn-success font-weight: 500"
+            >
+              Reserve
+            </button>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3">
+      <div class="card" style="width: 18rem">
+        <img
+          src="/../assets/img/Room-Type-Triple-Room.webp"
+          class="card-img-top"
+          alt="image of Room"
+          width="249px"
+          height="270px"
+        />
+        <div class="card-body">
+          <h1 class="card-title mb-0">{{ roomCategory[2].roomCategory }}</h1>
+          <em class="small">(Triple)</em>
+          <hr style="margin: revert" />
+          <h2 class="mb-0">
+            <span style="color: #a14c4c">LKR {{ roomCategory[2].price }}</span
+            ><em class="text-muted ml-2" style="font-size: 13px"
+              >~including food</em
+            >
+          </h2>
+          <h2 class="card-text">
+            <span
+              class="badge badge-pill badge-primary"
+              style="color: black; font-weight: 500"
+              >Available Room: {{ roomCategory[2].availableCount }}</span
+            >
+            <!-- <ng-template #elseBlock>
+                            <span class="badge badge-pill badge-danger"
+                                style="color: black; font-weight: 500">Unavailable</span>
+                        </ng-template> -->
+          </h2>
+          <button
+            *ngIf="user && roomCategory[2].availableCount > 0; else elseBlock"
+            type="button"
+            routerLink="/reserve"
+            routerLinkActive="active"
+            class="btn btn-success font-weight: 500"
+          >
+            Reserve
+          </button>
+          <ng-template #elseBlock>
+            <button
+              disabled
+              type="button"
+              routerLinkActive="active"
+              class="btn btn-success font-weight: 500"
+            >
+              Reserve
+            </button>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-3 mb-5">
+  <div class="row justify-content-between mx-5">
+    <div class="col-xs-3 col-sm-3 col-md-3">
+      <div class="card" style="width: 18rem">
+        <img
+          src="/../assets/img/Room-Type-quad-Room.webp"
+          class="card-img-top"
+          alt="image of Room"
+          width="249px"
+          height="270px"
+        />
+        <div class="card-body">
+          <h1 class="card-title mb-0">{{ roomCategory[3].roomCategory }}</h1>
+          <em class="small">(Quad)</em>
+          <hr style="margin: revert" />
+          <h2 class="mb-0">
+            <span style="color: #a14c4c">LKR {{ roomCategory[3].price }}</span
+            ><em class="text-muted ml-2" style="font-size: 13px"
+              >~including food</em
+            >
+          </h2>
+          <h2 class="card-text">
+            <span
+              class="badge badge-pill badge-primary"
+              style="color: black; font-weight: 500"
+              >Available Room: {{ roomCategory[3].availableCount }}</span
+            >
+            <!-- <ng-template #elseBlock>
+                            <span class="badge badge-pill badge-danger"
+                                style="color: black; font-weight: 500">Unavailable</span>
+                        </ng-template> -->
+          </h2>
+          <button
+            *ngIf="user && roomCategory[3].availableCount > 0; else elseBlock"
+            type="button"
+            routerLink="/reserve"
+            routerLinkActive="active"
+            class="btn btn-success font-weight: 500"
+          >
+            Reserve
+          </button>
+          <ng-template #elseBlock>
+            <button
+              disabled
+              type="button"
+              routerLinkActive="active"
+              class="btn btn-success font-weight: 500"
+            >
+              Reserve
+            </button>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3">
+      <div class="card" style="width: 18rem">
+        <img
+          src="/../assets/img/Room-Type-Queen-Room.webp"
+          class="card-img-top"
+          alt="image of Room"
+          width="249px"
+          height="270px"
+        />
+        <div class="card-body">
+          <h1 class="card-title mb-0">{{ roomCategory[4].roomCategory }}</h1>
+          <em class="small">(Queen)</em>
+          <hr style="margin: revert" />
+          <h2 class="mb-0">
+            <span style="color: #a14c4c">LKR {{ roomCategory[4].price }}</span
+            ><em class="text-muted ml-2" style="font-size: 13px"
+              >~including food</em
+            >
+          </h2>
+          <h2 class="card-text">
+            <span
+              class="badge badge-pill badge-primary"
+              style="color: black; font-weight: 500"
+              >Available Room: {{ roomCategory[4].availableCount }}</span
+            >
+            <!-- <ng-template #elseBlock>
+                            <span class="badge badge-pill badge-danger"
+                                style="color: black; font-weight: 500">Unavailable</span>
+                        </ng-template> -->
+          </h2>
+          <button
+            *ngIf="user && roomCategory[4].availableCount > 0; else elseBlock"
+            type="button"
+            routerLink="/reserve"
+            routerLinkActive="active"
+            class="btn btn-success font-weight: 500"
+          >
+            Reserve
+          </button>
+          <ng-template #elseBlock>
+            <button
+              disabled
+              type="button"
+              routerLinkActive="active"
+              class="btn btn-success font-weight: 500"
+            >
+              Reserve
+            </button>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3">
+      <div class="card" style="width: 18rem">
+        <img
+          src="/../assets/img/Room-Type-King-Room.webp"
+          class="card-img-top"
+          alt="image of Room"
+          width="249px"
+          height="270px"
+        />
+        <div class="card-body">
+          <h1 class="card-title mb-0">{{ roomCategory[5].roomCategory }}</h1>
+          <em class="small">(King)</em>
+          <hr style="margin: revert" />
+          <h2 class="mb-0">
+            <span style="color: #a14c4c">LKR {{ roomCategory[5].price }}</span
+            ><em class="text-muted ml-2" style="font-size: 13px"
+              >~including food</em
+            >
+          </h2>
+          <h2 class="card-text">
+            <span
+              class="badge badge-pill badge-primary"
+              style="color: black; font-weight: 500"
+              >Available Room: {{ roomCategory[5].availableCount }}</span
+            >
+            <!-- <ng-template #elseBlock>
+                                <span class="badge badge-pill badge-danger"
+                                    style="color: black; font-weight: 500">Unavailable</span>
+                            </ng-template> -->
+          </h2>
+          <button
+            *ngIf="user && roomCategory[5].availableCount > 0; else elseBlock"
+            type="button"
+            routerLink="/reserve"
+            routerLinkActive="active"
+            class="btn btn-success font-weight: 500"
+          >
+            Reserve
+          </button>
+          <ng-template #elseBlock>
+            <button
+              disabled
+              type="button"
+              routerLinkActive="active"
+              class="btn btn-success font-weight: 500"
+            >
+              Reserve
+            </button>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

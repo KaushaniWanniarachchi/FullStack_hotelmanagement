@@ -1,0 +1,275 @@
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+  <div class="hero-container">
+    <div
+      id="heroCarousel"
+      class="carousel slide carousel-fade"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="carousel-background">
+            <img src="/../assets/ForDashboard/img/slide/1.jpg" alt="" />
+          </div>
+          <div class="carousel-container">
+            <div class="carousel-content">
+              <h2 class="animate__animated animate__fadeInDown">
+                Welcome to <span>{{ title }}</span>
+              </h2>
+              <a
+                routerLink="/hostel-detail"
+                class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="carousel-background">
+            <img src="/../assets/ForDashboard/img/slide/2.jpg" alt="" />
+          </div>
+          <div class="carousel-container">
+            <div class="carousel-content">
+              <a
+                routerLink="/hostel-detail"
+                class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="carousel-background">
+            <img src="/../assets/ForDashboard/img/slide/3.jpg" alt="" />
+          </div>
+          <div class="carousel-container">
+            <div class="carousel-content">
+              <a
+                routerLink="/hostel-detail"
+                class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <div class="carousel-background">
+            <img src="/../assets/ForDashboard/img/slide/4.jpg" alt="" />
+          </div>
+          <div class="carousel-container">
+            <div class="carousel-content">
+              <a
+                routerLink="/hostel-detail"
+                class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Slide 5 -->
+        <div class="carousel-item">
+          <div class="carousel-background">
+            <img src="/../assets/ForDashboard/img/slide/5.jpg" alt="" />
+          </div>
+          <div class="carousel-container">
+            <div class="carousel-content">
+              <a
+                routerLink="/hostel-detail"
+                class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Slide 6 -->
+        <div class="carousel-item">
+          <div class="carousel-background">
+            <img src="/../assets/ForDashboard/img/slide/6.jpg" alt="" />
+          </div>
+          <div class="carousel-container">
+            <div class="carousel-content">
+              <a
+                routerLink="/hostel-detail"
+                class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a
+        class="carousel-control-prev"
+        href="#heroCarousel"
+        role="button"
+        data-slide="prev"
+      >
+        <span
+          class="carousel-control-prev-icon icofont-thin-double-left"
+          aria-hidden="true"
+        ></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a
+        class="carousel-control-next"
+        href="#heroCarousel"
+        role="button"
+        data-slide="next"
+      >
+        <span
+          class="carousel-control-next-icon icofont-thin-double-right"
+          aria-hidden="true"
+        ></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- End Hero -->
+
+<main id="main">
+  <!-- ======= About Us Section ======= -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Us</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 pt-4 pt-lg-0 content">
+          <div class="skills-content mt-4">
+            <img src="/../assets/ForDashboard/img/slide/60.jpg" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <hr />
+          <h2 class="text-center">
+            Have Great Time in
+            <strong>{{ title | uppercase }}</strong>
+          </h2>
+          <hr />
+          <h3>
+            Near a sleepy fishing village, nestled amongst the swaying coconut
+            trees, you will come upon the charming and tranquil Sea Side South
+            Park Hotel, a sprawling, five-storied resort hotel overlooking a
+            wide expanse of the Indian Ocean. To enter this Resort is to enter
+            paradise. Located on a secluded stretch of the Beach in the Southern
+            Coast of Sri Lanka, you may walk your cares away on its pristine
+            beach, feel the sand sift through your toes, and delight in the most
+            beautiful view. This brand new Resort boasts 80 beautiful rooms,
+            furnished with the latest amenities, each with its own view of the
+            great expanse of ocean. Visit the Sea Side South Park Hotel for
+            wonderful service, amazing food and a holistic tropical experience –
+            a getaway like no other.
+          </h3>
+          <div class="row">
+            <div class="col-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a
+                  class="list-group-item list-group-item-action active"
+                  id="list-home-list"
+                  data-toggle="list"
+                  href="#list-home"
+                  role="tab"
+                  aria-controls="home"
+                  >{{ roomCategory[0].roomCategory }}</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  id="list-profile-list"
+                  data-toggle="list"
+                  href="#list-profile"
+                  role="tab"
+                  aria-controls="profile"
+                  >{{ roomCategory[1].roomCategory }}</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  id="list-messages-list"
+                  data-toggle="list"
+                  href="#list-messages"
+                  role="tab"
+                  aria-controls="messages"
+                  >{{ roomCategory[2].roomCategory }}</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  id="list-home-list"
+                  data-toggle="list"
+                  href="#list-home"
+                  role="tab"
+                  aria-controls="home"
+                  >{{ roomCategory[3].roomCategory }}</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  id="list-profile-list"
+                  data-toggle="list"
+                  href="#list-profile"
+                  role="tab"
+                  aria-controls="profile"
+                  >{{ roomCategory[4].roomCategory }}</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  id="list-messages-list"
+                  data-toggle="list"
+                  href="#list-messages"
+                  role="tab"
+                  aria-controls="messages"
+                  >{{ roomCategory[5].roomCategory }}</a
+                >
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="tab-content" id="nav-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="list-home"
+                  role="tabpanel"
+                  aria-labelledby="list-home-list"
+                >
+                  Specious room with Air condition and Fridge facilities.<br />
+                  Storage Cupboard and 24x7 internet facility with Wi-Fi.<br />
+                  Only for 1 Persons.
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="list-profile"
+                  role="tabpanel"
+                  aria-labelledby="list-profile-list"
+                >
+                  Specious room with separate quality beds.<br />
+                  Specious storage cupboard. 24x7 internet facility with Wi-Fi.
+                  Specious room with Air condition and Fridge facilities.<br />
+                  Only for 2 Persons.
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="list-messages"
+                  role="tabpanel"
+                  aria-labelledby="list-messages-list"
+                >
+                  Specious room with separate quality beds<br />
+                  Specious storage cupboard. 24x7 internet facility with
+                  Wi-Fi.<br />
+                  For 3 Persons.
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="font-italic"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About Us Section -->
+
+  <!-- ======= Our Team Section ======= -->
+</main>
