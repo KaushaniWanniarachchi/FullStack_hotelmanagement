@@ -1,7 +1,7 @@
 const Contact  =  require('../models/contact.model');
 
 async function insertContactForm(contactForm) {
-    // console.log(`saving contactForm to db`, contactForm);
+    
     return await new Contact(contactForm).save();
 }
 
