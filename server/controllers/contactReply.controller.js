@@ -1,7 +1,7 @@
 const ContactReply  =  require('../models/ContactReply.model');
 
 async function insertContactReply(contactReply) {
-    // console.log(`saving contactReply to db`, contactReply);
+    
     return await new ContactReply(contactReply).save();
 }
 
