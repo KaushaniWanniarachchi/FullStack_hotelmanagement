@@ -11,11 +11,11 @@ async function insert(user) {
 
 async function getUserByUsernameAndPassword(currentUsername, currentPassword) {
     let user = await User.findOne({ username: currentUsername });
-    // console.log(user);
+    
     if (isUserValid(user, currentPassword, user.hashedPassword)) {
         user = user.toObject();
         delete user.hashedPassword;
-        // console.log(user);
+       
         return user;
     }
     else {
