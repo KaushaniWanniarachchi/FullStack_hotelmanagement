@@ -29,20 +29,20 @@ export class AuthService {
       switchMap(({ user, token }) => {
         this.setUser(user);
         this.tokenStorage.setToken(token);
-        // console.log('found user', user);
+        
         return of(user);
       }),
       catchError(err => {
-        // console.log(`Your login details could not be verified. Please try again`, err);
+       ;
         return throwError(`Your login details could not be verified. Please try again`);
       })
     );
   }
 
   logout() {
-    // remove user from subject
+    
     this.setUser(null);
-    // remove token from localStorage
+  
     this.tokenStorage.removeToken();
     console.log('user logout successfully');
   }
@@ -76,7 +76,7 @@ export class AuthService {
     (
       switchMap(({ user }) => {
         this.setUser(user);
-        // console.log('found user', user);
+       
         return of(user);
       }),
       catchError(err => {
@@ -90,7 +90,7 @@ export class AuthService {
     (
       switchMap(({ userList }) => {
         this.setUser(userList);
-        // console.log('found user', user);
+      
         return of(userList);
       }),
       catchError(err => {
